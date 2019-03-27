@@ -1,12 +1,11 @@
-.contact-container {
-  background-color: aliceblue;
-  
-  width: 30%;
+.background-color {
+  margin-top: 10vh;
+  background-color: white;
+  opacity: .8;
+  border-radius: 6px;
+  z-index: 1;
 }
-.contact-wrapper {
-  height: 95%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.card {
+  z-index: 1;
 }
