@@ -1,0 +1,13 @@
+.nav-pills li {
+  margin: 20px 10px 10px 20px;
+}
+
+.App__Navigation {
+  opacity: .7;
+  color: rgba(0, 0,0,1)
+}
+
+
+#contactphone {
+  float: right;
+}

@@ -1,0 +1,40 @@
+.about-wrapper {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.about__content {
+  opacity: .7;
+  height: 45%;
+  width: 66%;
+  background: white;
+}
+
+.card__paragraph {
+  text-align: left;
+  color: navy;
+}
+
+
+.about__text {
+  display: flex;
+  font-size: 1em;
+  justify-content: flex-start;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87%;
+}

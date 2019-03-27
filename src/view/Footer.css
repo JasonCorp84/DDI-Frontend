@@ -1,0 +1,15 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2vh;
+  opacity: 1;
+}
