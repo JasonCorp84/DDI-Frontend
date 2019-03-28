@@ -22,7 +22,7 @@ const OurTeam = () => {
         <MDBCardBody>
           <MDBCardTitle> Joe Castellanos </MDBCardTitle>
           <MDBCardText> 
-          <b>Warehousing and Distribution District Manager of Operations</b><br/>
+          <b>Manager of Equipment</b><br/>
           joe@ddistributions.com
           </MDBCardText>
         </MDBCardBody>
