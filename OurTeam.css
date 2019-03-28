@@ -1,0 +1,26 @@
+.OurTeam-Container {
+  
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+
+.Ripple-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 5px;
+  padding: 10px;
+}
+
+
+.card-image {
+background: rgba(0, 0, 0, 1);
+
+}
