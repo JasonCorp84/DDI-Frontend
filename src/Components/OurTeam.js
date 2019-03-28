@@ -40,7 +40,18 @@ const OurTeam = () => {
         </MDBCardBody>
       </MDBCard>
 
-
+    
+      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem" }}>
+      <MDBCardImage className="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaDVGZCCx_Jrov7sALYuflSbcxTyrgJ329wq5eBfetXNheplsx" waves />
+        <MDBCardBody>
+          <MDBCardTitle>Kelsey Robinson</MDBCardTitle>
+          <MDBCardText>
+          <b> Controller </b>
+          <br/>        
+          kelsey@ddidistributions.com
+          </MDBCardText>
+        </MDBCardBody>
+      </MDBCard>
 
 
       <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem" }}>
