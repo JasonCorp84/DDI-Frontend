@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {  MDBContainer, MDBFooter, MDBIcon } from "mdbreact"
-
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
 
 import '../view/Footer.css';
 
