@@ -1,11 +1,16 @@
 .background-color {
   margin-top: 10vh;
-  background-color: white;
-  opacity: .8;
+  background-color: #E9EBEE;
   border-radius: 6px;
   z-index: 1;
 }
 
 .card {
   z-index: 1;
+  
+}
+
+.text-center-1 {
+  display: flex;
+  justify-content: center;
 }
