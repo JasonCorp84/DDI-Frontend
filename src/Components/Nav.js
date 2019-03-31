@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import {
   MDBNavbar, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBIcon
   } from "mdbreact";
+  import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
 import '../view/Nav.css';
 
 
