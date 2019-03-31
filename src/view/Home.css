@@ -3,10 +3,8 @@ body, html {
   }
 
   .btn {
-    font-family: 'awesome', sans-serif;
-    font-size: 26px;
-    padding: 20px;
-    border-radius: 25px;
+  font-family: 'awesome', sans-serif;
+   display: flex;
   }
 
   #apppage .gradient {
@@ -35,3 +33,12 @@ body, html {
   height: 93vh;
 }
 
+.contact-button {
+  display: flex;
+  align-self: center;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+}
