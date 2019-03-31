@@ -12,7 +12,7 @@ class Footer extends Component {
   }
   render() { 
     return ( 
-      <div class="footer">
+      <div className="footer">
         <MDBFooter color="blue darken-3" className="font-small pt-4 mt-4">
           <MDBContainer fluid className="address">
             <MDBIcon icon="map-marked-alt" />   <strong> 16875 Heacock st. Moreno Valley, CA 92551</strong>
