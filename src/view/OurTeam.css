@@ -2,11 +2,10 @@
   min-width: 85%;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  padding-bottom: 10vh;
+  padding-bottom: 12vh;
   z-index: -1;
-  height: 100%;
   /* border: 1px solid red; */
 }
 
@@ -28,5 +27,4 @@
 
 .card-image {
 background: rgba(0, 0, 0, 1);
-
 }
