@@ -1,33 +1,40 @@
-.card-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.about__content {
-  
-  height: 45%;
-  width: 66%;
-  background: white;
-}
-
-.card__paragraph {
-  text-align: left;
-  color: black;
-}
-
-
-.about__text {
-  display: flex;
-  font-size: 1em;
-  justify-content: flex-start;
-}
-
 .about-container {
   display: flex;
+  align-self: center;
+  overflow: auto;
   justify-content: center;
+  align-content: center;
   align-items: center;
-  height: 87%;
+  margin-bottom: 12vh;
+  width: 60%
 }
 
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 93%;
+  width: 100%;
+  text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-wrapper {
+    padding-top: 70vh;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    text-align: left;
+  }  
+  .about-container {
+    display: flex;
+    align-self: center;
+    overflow: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 12vh;
+    width: 100%
+  }
+}
