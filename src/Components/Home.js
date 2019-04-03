@@ -18,7 +18,7 @@ const Home = () => {
                     Industry leader in Warehouse and Distribution.
                   </h3>
                   <div className="home-container">                  <MDBBtn color="blue darken-3" className="contact-button">
-                    <MDBIcon far icon="address-book"  /> <NavLink style={{color: "white"}} to="contact"> Contact</NavLink>
+                     <NavLink far icon="address-book" style={{color: "white"}} to="contact"> Contact</NavLink>
                   </MDBBtn>
                   </div>
 

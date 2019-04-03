@@ -1,11 +1,13 @@
 .OurTeam-Container {
-  
-  height: 95vh;
-  display: flex;
+  min-width: 85%;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-bottom: 10vh;
   z-index: -1;
+  height: 100%;
+  /* border: 1px solid red; */
 }
 
 

@@ -2,13 +2,14 @@ import React from 'react';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import "../view/OurTeam.css";
-import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText} from 'mdbreact';
+import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBContainer} from 'mdbreact';
 
 const OurTeam = () => {
   return (
-<div className="OurTeam-Container">
 
-      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem" }}>
+<MDBContainer className="OurTeam-Container">
+
+      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem", height: "25rem" }}>
         <MDBCardImage className="img-fluid card-image" src="https://image.shutterstock.com/image-vector/male-profile-picture-placeholder-vector-260nw-450966901.jpg" waves />
           <MDBCardBody>
             <MDBCardTitle>Peter Larios</MDBCardTitle>
@@ -19,7 +20,7 @@ const OurTeam = () => {
           </MDBCardBody>
       </MDBCard>
 
-      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem" }}>
+      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem",height: "25rem" }}>
       <MDBCardImage  className="img-fluid" src="https://image.shutterstock.com/image-vector/male-profile-picture-placeholder-vector-260nw-450966901.jpg" waves />
         <MDBCardBody>
           <MDBCardTitle> Joe Castellanos </MDBCardTitle>
@@ -31,7 +32,7 @@ const OurTeam = () => {
       </MDBCard>
 
 
-      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem" }}>
+      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem",height: "25rem" }}>
       <MDBCardImage className="img-fluid card-image" src="https://image.shutterstock.com/image-vector/male-profile-picture-placeholder-vector-260nw-450966901.jpg" waves />
         <MDBCardBody>
           <MDBCardTitle>Keneth Bagley</MDBCardTitle>
@@ -43,7 +44,7 @@ const OurTeam = () => {
       </MDBCard>
 
     
-      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem" }}>
+      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem",height: "25rem" }}>
       <MDBCardImage className="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaDVGZCCx_Jrov7sALYuflSbcxTyrgJ329wq5eBfetXNheplsx" waves />
         <MDBCardBody>
           <MDBCardTitle>Kelsey Robinson</MDBCardTitle>
@@ -56,7 +57,7 @@ const OurTeam = () => {
       </MDBCard>
 
 
-      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem" }}>
+      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem",height: "25rem" }}>
       <MDBCardImage className="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaDVGZCCx_Jrov7sALYuflSbcxTyrgJ329wq5eBfetXNheplsx" waves />
         <MDBCardBody>
           <MDBCardTitle>Karla Mejia</MDBCardTitle>
@@ -68,7 +69,7 @@ const OurTeam = () => {
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem" }}>
+      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem",height: "25rem" }}>
       <MDBCardImage className="img-fluid" src="https://image.shutterstock.com/image-vector/male-profile-picture-placeholder-vector-260nw-450966901.jpg" waves />
         <MDBCardBody>
           <MDBCardTitle>Luis Vazquez</MDBCardTitle>
@@ -80,7 +81,7 @@ const OurTeam = () => {
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem" }}>
+      <MDBCard outline color="blue lighten-5" className="our-team__card" style={{ width: "17rem",height: "25rem" }}>
       <MDBCardImage className="img-fluid" src="https://image.shutterstock.com/image-vector/male-profile-picture-placeholder-vector-260nw-450966901.jpg" waves />
         <MDBCardBody>
           <MDBCardTitle>Ed Castellanos</MDBCardTitle>
@@ -92,7 +93,7 @@ const OurTeam = () => {
           </MDBCardText>
         </MDBCardBody>
       </MDBCard>
-      </div>
+      </ MDBContainer>
   )
 }
 
