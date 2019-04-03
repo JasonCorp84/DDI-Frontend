@@ -7,6 +7,7 @@ import 'mdbreact/dist/css/mdb.css';
 
 
 
+
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -20,9 +21,8 @@ class Contact extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    if(this.state.name.length < 5 || this.state.email.length < 3  || this.state.message.length < 10) {
-      alert('please fill out all fields')
-    } else {
+      if(this.state.name.length > 5 && this.state.message.length > 10) {
+
       axios.post("https://pdfmy1ykk8.execute-api.us-east-2.amazonaws.com/s2", this.state)
  
       .then(res => {
@@ -36,10 +36,12 @@ class Contact extends Component {
       })
       .catch(err => alert(err.message))
   
+    } else {
+      alert("name has to be at least 5 characters long, and message has to contain at least 10 characters")
     }
-   
+   };
     
-  }
+  
   handleInput = (e, field) => {
 
     this.setState( 
@@ -114,7 +116,7 @@ class Contact extends Component {
       </div>
      );
   }
-}
 
+}
 
 export default Contact;
