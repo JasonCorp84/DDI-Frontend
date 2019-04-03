@@ -7,6 +7,7 @@ import 'mdbreact/dist/css/mdb.css';
 
 
 
+
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -20,9 +21,8 @@ class Contact extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    if(this.state.name.length < 5 || this.state.email.length < 3  || this.state.message.length < 10) {
-      alert('please fill out all fields')
-    } else {
+      if(this.state.name.length > 5 && this.state.message.length > 10) {
+
       axios.post("https://pdfmy1ykk8.execute-api.us-east-2.amazonaws.com/s2", this.state)
  
       .then(res => {
@@ -36,10 +36,12 @@ class Contact extends Component {
       })
       .catch(err => alert(err.message))
   
+    } else {
+      alert("name has to be at least 5 characters long, and message has to contain at least 10 characters")
     }
-   
+   };
     
-  }
+  
   handleInput = (e, field) => {
 
     this.setState( 
@@ -49,14 +51,14 @@ class Contact extends Component {
       )
   }
 
-  
+   //className="background-color"
 
   render() { 
     return ( 
-      
-        <MDBContainer className="background-color">
-          <MDBRow xsm="11" sm="11" md="6" lg="1">
-            <MDBCol md="12">
+      <div className="contact-wrapper">
+        <MDBContainer fluid className="background-color">
+          <MDBRow>
+            <MDBCol md="6" className="input-color">
               <form onSubmit={this.handleSubmit}>
                 <p className="h5 text-center mb-4">Write to us</p>
                 <div className="grey-text">
@@ -64,6 +66,7 @@ class Contact extends Component {
                   <MDBInput onChange={(e) => this.handleInput(e, "name") } 
                     value={this.state.name}                    
                     label="Your name"
+                    icon="user"
                     group
                     type="text"
                     validate
@@ -75,6 +78,7 @@ class Contact extends Component {
                     onChange={(e) => this.handleInput(e, "email") }
                     value={this.state.email}
                     label="Your email"
+                    icon="envelope"
                     group
                     type="email"
                     validate
@@ -85,6 +89,7 @@ class Contact extends Component {
                   <MDBInput onChange={(e) => this.handleInput(e, "subject")}
                     value={this.state.subject}
                     label="Subject"
+                    icon="tag"
                     group
                     type="text"
                     validate
@@ -96,6 +101,7 @@ class Contact extends Component {
                     type="textarea"
                     rows="2"
                     label="Your message"
+                    icon="pencil-alt"
                   />
                 </div>
                 <div className="text-center-1">
@@ -107,9 +113,10 @@ class Contact extends Component {
             </MDBCol>
           </MDBRow>
       </MDBContainer>
+      </div>
      );
   }
-}
 
+}
 
 export default Contact;
