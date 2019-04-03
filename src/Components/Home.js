@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from 'react-router-dom'
-import { MDBIcon,  MDBBtn, MDBContainer } from "mdbreact";
+import { MDBBtn } from "mdbreact";
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import '../view/Home.css';
