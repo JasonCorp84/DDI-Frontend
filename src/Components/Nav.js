@@ -24,17 +24,18 @@ class Nav extends Component {
   }
 
   componentDidMount() {
-    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Moreno Valley,us,ca&appid=fe57fc98328d7b115a5b1b1745446662&units=imperial`)
-    .then(res => 
-      this.setState(
-        {
-          weather: res.data['weather'][0]['description'],
-          temp: res.data['main']['temp'],
-          icon: res.data['weather'][0]['icon']
-        }
-        )
-    )
-    .catch(err=> console.log(err.data))
+    // axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Moreno Valley,us,ca&appid=fe57fc98328d7b115a5b1b1745446662&units=imperial`)
+    // .then(res => 
+    //   this.setState(
+    //     {
+    //       weather: res.data['weather'][0]['description'],
+    //       temp: res.data['main']['temp'],
+    //       icon: res.data['weather'][0]['icon']
+    //     }
+    //     )
+    // )
+    // .catch(err=> console.log(err.data))
+    
   }
 
   render() {

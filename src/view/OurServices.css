@@ -21,3 +21,13 @@
   height: 63.8vh;
   width: auto;
 }
+
+ .carousel-control-next-icon {
+  width: 50px !important;
+  height: 50px !important;
+  
+}
+icon .carousel-control-prev-icon {
+  width: 50px !important;
+  height: 50px !important;
+}
