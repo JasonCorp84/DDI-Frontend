@@ -21,7 +21,7 @@ class Contact extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-      if(this.state.name.length > 5 && this.state.message.length > 10) {
+      if(this.state.name.length >= 5 && this.state.message.length >= 10) {
 
       axios.post("https://pdfmy1ykk8.execute-api.us-east-2.amazonaws.com/s2", this.state)
  
@@ -33,6 +33,7 @@ class Contact extends Component {
         subject: "",
         message: ""
         })
+        console.log(res.data);
       })
       .catch(err => alert(err.message))
   
