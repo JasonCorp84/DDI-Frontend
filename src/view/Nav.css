@@ -11,3 +11,8 @@
 #contactphone {
   float: right;
 }
+
+#openweathermap-widget-13 {
+ background: rgba(255,255,255,1);
+ height: 10px;
+}
