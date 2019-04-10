@@ -24,6 +24,12 @@ class Nav extends Component {
   }
 
   componentDidMount() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.charset = "utf-8";
+    script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(script, s); 
     // axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Moreno Valley,us,ca&appid=fe57fc98328d7b115a5b1b1745446662&units=imperial`)
     // .then(res => 
     //   this.setState(
